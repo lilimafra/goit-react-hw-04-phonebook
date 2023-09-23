@@ -30,7 +30,7 @@ export const Form = ({ onSubmitForm }) => {
   const handleSubmit = evt => {
     evt.preventDefault();
 
-    onSubmitForm({ name, number });
+    onSubmitForm({ name, number, id: nanoid() });
     resetForm();
   };
 
